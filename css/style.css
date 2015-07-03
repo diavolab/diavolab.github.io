@@ -589,6 +589,13 @@ nav#footer p{
     #tf-home .overlay{
         min-height: 100vh;
     }
+    
+    #tf-team {
+        min-height: 100vh;
+    }
+    #tf-team .overlay{
+        min-height: 100vh;
+    }
 }
 @media (min-width:770px) and (min-height:480px) {
     .content {
