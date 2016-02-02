@@ -445,6 +445,46 @@ ol.type li a.active { font-weight: 700; }
 .hover-bg:hover .hover-text{
 	opacity: 1;
 }
+
+.overlayer {
+  position: relative;
+}
+
+.overlayer:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  /*display: none;*/
+  z-index:0;
+  background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+}
+
+.overlayer:hover:before{
+  /*display: block;*/
+    opacity: 1;
+  transition: all 0.3s;
+}
+
+.overlayer .hover-text {
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+	margin: auto;
+    color: white;
+    height: 100%;
+	width: 100%;
+    padding: 15% 5%;
+}
+
+.overlayer:hover .hover-text {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
 #tf-works i.fa {
 	height: 30px;
 	width: 30px;
